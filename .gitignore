@@ -1,0 +1,22 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Pipenv environment
+.env
+
+# SQLite database
+instance/*.db
+
+# Testing
+.pytest_cache/
+
+# Debugging
+.ipdb
+
+# Operating system files
+.DS_Store
