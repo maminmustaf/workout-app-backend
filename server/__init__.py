@@ -1,5 +1,4 @@
 import os
-
 from flask import Flask
 
 from server.extensions import db, migrate
@@ -17,5 +16,8 @@ def create_app():
     migrate.init_app(app, db)
 
     from server.models import Workout, Exercise, WorkoutExercise
+    from server.routes import api
+
+    app.register_blueprint(api)
 
     return app
